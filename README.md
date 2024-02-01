@@ -46,3 +46,6 @@ https://dev.to/collegewap/react-fetch-example-getpostputdelete-with-api-3l00
 
 other crud website
 https://jasonwatmore.com/post/2020/11/11/react-fetch-http-delete-request-examples
+
+styling:
+https://v1.tailwindcss.com/components/cards
