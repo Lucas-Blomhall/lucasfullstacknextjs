@@ -35,11 +35,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
-
 //Lucas Next.js documentation:
 fetch documentation: https://nextjs.org/docs/pages/building-your-application/data-fetching/client-side
 
 Fetch with client component. And a Server Component shouldn't contain browser-specific things like click handlers or hooks such as useState. If you need that, you should add "use client" at the top to tell Next.js to send the JavaScript needed for that component, making it a Client Component: https://stackoverflow.com/questions/74965849/youre-importing-a-component-that-needs-usestate-it-only-works-in-a-client-comp
 
+Lucas documentation read from the web:
+crud with no usestate, useeffect:
+https://dev.to/collegewap/react-fetch-example-getpostputdelete-with-api-3l00
 
+other crud website
+https://jasonwatmore.com/post/2020/11/11/react-fetch-http-delete-request-examples
