@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import { fetchCars } from "../apiservices/CarApiService"; // Import the service function
 
 export default function Home() {
   const [cars, setCars] = useState<Car[]>([]);
@@ -9,15 +10,14 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null); // State for storing any error messages
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/cars")
-      .then((res) => res.json())
+    fetchData("http://127.0.0.1:8000/cars")
       .then((data) => {
         setCars(data);
         setLoading(false);
       })
       .catch((error) => {
         console.error("Failed to fetch cars:", error);
-        setError("Failed to load data."); // Set a user-friendly error message
+        setError("Failed to load data.");
         setLoading(false);
       });
   }, []);
